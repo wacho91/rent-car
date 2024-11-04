@@ -1,3 +1,4 @@
+import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 
 export const Navlinks = [
     {
@@ -22,7 +23,7 @@ export const Navlinks = [
     },
 ];
 
-const Navbar = () => {
+const Navbar = ({theme, setTheme}) => {
   return (
     <div className="relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300">
         <div className="container py-2 md:py-0">
@@ -44,6 +45,18 @@ const Navbar = () => {
                                 </li>
                             ))
                         }
+                        {/*Implement dark mode*/}
+                        {theme === "dark" ? (
+                            <BiSolidSun 
+                                onClick={() => setTheme("light")}
+                                className="text-2xl cursor-pointer"
+                            />
+                        ): (
+                            <BiSolidMoon 
+                                onClick={() => setTheme("dark")}
+                                className="text-2xl cursor-pointer"
+                            />
+                        )}
                     </ul>
                 </nav>
             </div>
