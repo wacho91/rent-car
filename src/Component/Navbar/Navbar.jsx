@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
+import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import MobileMenu from "./MobileMenu";
 
 export const Navlinks = [
     {
@@ -24,6 +27,13 @@ export const Navlinks = [
 ];
 
 const Navbar = ({theme, setTheme}) => {
+
+    const [showMenu, setShowMenu] = useState(false);
+    
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
+
   return (
     <div className="relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300">
         <div className="container py-2 md:py-0">
@@ -59,8 +69,38 @@ const Navbar = ({theme, setTheme}) => {
                         )}
                     </ul>
                 </nav>
+                {/* Mobile view  */}
+                <div className="flex items-center gap-4 md:hidden">
+                    {/* dark  mode */}
+                    {theme === "dark" ? (
+                        <BiSolidSun 
+                            onClick={() => setTheme("light")}
+                            className="text-2xl"
+                        />
+                    ): (
+                        <BiSolidMoon 
+                            onClick={() => setTheme("dark")}
+                            className="text-2xl"
+                        />
+                    )}
+                    {/* Mobile Hamburger icon */}
+                    {showMenu ? (
+                        <HiMenuAlt1 
+                            onClick={toggleMenu}
+                            className=" cursor-pointer transition-all"
+                            size={30}
+                        />
+                    ): (
+                        <HiMenuAlt3 
+                            onClick={toggleMenu}
+                            className=" cursor-pointer transition-all"
+                            size={30}
+                        />
+                    )}
+                </div>
             </div>
         </div>
+        <MobileMenu showMenu={showMenu} />
     </div>
   )
 }
