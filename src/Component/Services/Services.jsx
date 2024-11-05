@@ -39,7 +39,7 @@ const Services = () => {
         <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
             <div className="container">
                 <div className="pb-12">
-                    <h1 className="text-3xl font-semibold text-center sm:text-4xl font-serif">
+                    <h1 data-aos="fade-up" className="text-3xl font-semibold text-center sm:text-4xl font-serif">
                         Why Choose Us
                     </h1>
                 </div>
@@ -47,6 +47,8 @@ const Services = () => {
                     {skillsData.map((skill) => (
                         <div 
                             key={skill.name}
+                            data-aos="fade-up"
+                            data-aos-delay={skill.aosDelay}
                             className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-dark  hover:bg-primary duration-300 text-white hover:text-black rounded-lg"
                         >
                             <div className="grid place-items-center">{skill.icon}</div>
