@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Navbar from "./Component/Navbar/Navbar";
 import Hero from "./Component/Hero/Hero";
 import About from "./Component/About/About";
+import Services from "./Component/Services/Services";
 
 export default function App() {
 
@@ -43,6 +44,7 @@ export default function App() {
         <Navbar theme={theme} setTheme={setTheme} />
         <Hero theme={theme} />
         <About />
+        <Services />
     </div>
   )
 }
