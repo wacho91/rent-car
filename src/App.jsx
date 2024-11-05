@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import Navbar from "./Component/Navbar/Navbar";
 import { useState } from "react";
 import { useEffect } from "react";
+import Hero from "./Component/Hero/Hero";
 
 export default function App() {
 
@@ -38,6 +39,7 @@ export default function App() {
   return (
     <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
         <Navbar theme={theme} setTheme={setTheme} />
+        <Hero theme={theme} />
     </div>
   )
 }
