@@ -9,6 +9,7 @@ import Hero from "./Component/Hero/Hero";
 import About from "./Component/About/About";
 import Services from "./Component/Services/Services";
 import CarList from "./Component/carList/carList";
+import Testimonial from "./Component/Testimonial/Testimonial";
 
 export default function App() {
 
@@ -47,6 +48,7 @@ export default function App() {
         <About />
         <Services />
         <CarList />
+        <Testimonial />
     </div>
   )
 }
