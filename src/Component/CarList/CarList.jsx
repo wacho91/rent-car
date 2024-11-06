@@ -37,24 +37,27 @@ const CarList = () => {
             </p>
             {/* Car listing */}
             <div>
-                <div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
                     {carList.map((data) => (
-                        <div key={data.name}>
-                            <div>
+                        <div 
+                            key={data.name}
+                            className="space-y-3 border-2 border-gray-300 hover:border-primary p-3 rounded-xl relative group"
+                        >
+                            <div className="w-full h-[120px]">
                                 <img 
                                     src={data.image} 
                                     alt="image" 
-                                    className="w-full h-[122px] object-contain sm:translate-x-8 group-hover:translate-x-16"
+                                    className="w-full h-[120px] object-contain sm:translate-x-8 group-hover:sm:translate-x-16 duration-700"
                                 />
                             </div>
-                            <div>
-                                <h1>{data.name}</h1>
-                                <div>
+                            <div className="space-y-2">
+                                <h1 className="text-primary font-semibold">{data.name}</h1>
+                                <div className="flex justify-between items-center text-xl font-semibold">
                                     <p>{data.price}/Day</p>
                                     <a href="#">View Details</a>
                                 </div>
                             </div>
-                            <p>
+                            <p className="text-xl font-semibold absolute top-0 left-3">
                                 12Km
                             </p>
                         </div>
@@ -62,8 +65,8 @@ const CarList = () => {
                 </div>
             </div>
             {/* End of car listing */}
-            <div>
-                <button>
+            <div className="grid place-items-center mt-8">
+                <button className="button-outline">
                     Get Started
                 </button>
             </div>
