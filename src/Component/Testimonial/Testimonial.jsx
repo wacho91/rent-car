@@ -36,22 +36,22 @@ const Testimonial = () => {
                         Perferendis iure consectetur tempora amet.
                     </p>
                 </div>
-                <div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-black dark:text-white">
                     {testimonialData.map((skill) => (
                         <div
                             key={skill.name}
+                            className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-12 dark:bg-white/20 bg-gray-100 duration-300  rounded-lg "
                         >
-                            <div>
+                            <div className="grid place-items-center ">
                                 <img 
                                     src="https://picsum.photos/200" 
                                     alt="image"
-                                    className="" 
+                                    className="rounded-full w-20 h-20"
                                 />
                             </div>
-                            <div>
-                                <p>{skill.description}</p>
-                                <p>{skill.name}</p>
-                            </div>
+                            <div  className="text-2xl">⭐⭐⭐⭐⭐</div>
+                            <p>{skill.description}</p>
+                            <p className="text-center font-semibold">{skill.name}</p>   
                         </div>
                     ))}
                 </div>
