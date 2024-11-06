@@ -8,6 +8,7 @@ import Navbar from "./Component/Navbar/Navbar";
 import Hero from "./Component/Hero/Hero";
 import About from "./Component/About/About";
 import Services from "./Component/Services/Services";
+import CarList from "./Component/carList/carList";
 
 export default function App() {
 
@@ -45,6 +46,7 @@ export default function App() {
         <Hero theme={theme} />
         <About />
         <Services />
+        <CarList />
     </div>
   )
 }
