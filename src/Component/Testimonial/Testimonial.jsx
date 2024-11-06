@@ -28,10 +28,10 @@ const Testimonial = () => {
             <div className="container">
                 {/* Heading */}
                 <div className="space-y-4 pb-12">
-                    <p className="text-3xl font-semibold text-center sm:text-4xl font-serif">
+                    <p data-aos="fade-up" className="text-3xl font-semibold text-center sm:text-4xl font-serif">
                         What Our Clients Say About Us
                     </p>
-                    <p className="text-center sm:px-44">
+                    <p data-aos="fade-up" className="text-center sm:px-44">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Perferendis iure consectetur tempora amet.
                     </p>
@@ -40,6 +40,8 @@ const Testimonial = () => {
                     {testimonialData.map((skill) => (
                         <div
                             key={skill.name}
+                            data-aos="fade-up"
+                            data-aos-delay={skill.aosDelay}
                             className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-12 dark:bg-white/20 bg-gray-100 duration-300  rounded-lg "
                         >
                             <div className="grid place-items-center ">
