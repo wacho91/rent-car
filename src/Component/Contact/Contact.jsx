@@ -16,6 +16,11 @@ const Contact = () => {
                             Exercitationem necessitatibus quasi et vel,{" "}
                         </p>
                     </div>
+                    <div>
+                        <a href="">
+                            Contact
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
