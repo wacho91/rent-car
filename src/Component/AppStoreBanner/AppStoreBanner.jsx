@@ -21,14 +21,17 @@ const AppStoreBanner = () => {
         >
             <div>
                 <div className="space-y-6 max-w-xl mx-auto">
-                    <h1 className="text-2xl text-center sm:text-4xl font-semibold font-serif">
+                    <h1 
+                        data-aos="fade-up"
+                        className="text-2xl text-center sm:text-4xl font-semibold font-serif"
+                    >
                         Get Started with our app
                     </h1>
-                    <p className="text-center sm:px-20">
+                    <p data-aos="fade-up" className="text-center sm:px-20">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
                         magnam harum accusantium odit?
                     </p>
-                    <div className="flex flex-wrap justify-center items-center gap-4">
+                    <div data-aos="fade-up" className="flex flex-wrap justify-center items-center gap-4">
                         <a href="#">
                             <img 
                                 src={PlayStoreImage} 
