@@ -26,7 +26,18 @@ const AppStoreBanner = () => {
                         magnam harum accusantium odit?
                     </p>
                     <div>
-                        
+                        <a href="#">
+                            <img 
+                                src={PlayStoreImage} 
+                                alt="image" 
+                            />
+                        </a>
+                        <a href="#">
+                            <img 
+                                src={AppStoreImage} 
+                                alt="image" 
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
