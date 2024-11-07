@@ -10,6 +10,7 @@ import About from "./Component/About/About";
 import Services from "./Component/Services/Services";
 import CarList from "./Component/carList/carList";
 import Testimonial from "./Component/Testimonial/Testimonial";
+import AppStoreBanner from "./Component/AppStoreBanner/AppStoreBanner";
 
 export default function App() {
 
@@ -49,6 +50,7 @@ export default function App() {
         <Services />
         <CarList />
         <Testimonial />
+        <AppStoreBanner />
     </div>
   )
 }
