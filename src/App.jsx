@@ -11,6 +11,7 @@ import Services from "./Component/Services/Services";
 import CarList from "./Component/carList/carList";
 import Testimonial from "./Component/Testimonial/Testimonial";
 import AppStoreBanner from "./Component/AppStoreBanner/AppStoreBanner";
+import Contact from "./Component/Contact/Contact";
 
 export default function App() {
 
@@ -51,6 +52,7 @@ export default function App() {
         <CarList />
         <Testimonial />
         <AppStoreBanner />
+        <Contact />
     </div>
   )
 }
