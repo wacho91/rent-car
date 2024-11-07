@@ -15,27 +15,32 @@ const bannerImage = {
 const AppStoreBanner = () => {
   return (
     <div className="container">
-        <div className="">
+        <div 
+            className=" text-black py-10 sm:min-h-[400px] sm:grid sm:place-items-center rounded-xl"
+            style={bannerImage}
+        >
             <div>
-                <div>
-                    <h1>
+                <div className="space-y-6 max-w-xl mx-auto">
+                    <h1 className="text-2xl text-center sm:text-4xl font-semibold font-serif">
                         Get Started with our app
                     </h1>
-                    <p>
+                    <p className="text-center sm:px-20">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
                         magnam harum accusantium odit?
                     </p>
-                    <div>
+                    <div className="flex flex-wrap justify-center items-center gap-4">
                         <a href="#">
                             <img 
                                 src={PlayStoreImage} 
                                 alt="image" 
+                                className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
                             />
                         </a>
                         <a href="#">
                             <img 
                                 src={AppStoreImage} 
                                 alt="image" 
+                                className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
                             />
                         </a>
                     </div>
